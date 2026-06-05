@@ -47,7 +47,7 @@
 
     <div class="stat-top">
         @isset ($icon)
-            <div class="stat-icon bg-{{ $iconColor }}-soft text-{{ $iconColor === 'primary' ? 'primary' : $iconColor }}">
+            <div class="stat-icon bg-{{ $iconColor }}-soft text-{{ $iconColor }}">
                 {{ $icon }}
             </div>
         @endisset

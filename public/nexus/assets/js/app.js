@@ -153,7 +153,7 @@
     }
 
     function close() {
-      $('.modal.show').removeClass('show');
+      $('.modal-overlay.show').removeClass('show');
       $('body').removeClass('overflow-hidden');
     }
 
@@ -164,10 +164,15 @@
         open($(this).data('modal-open'));
       });
 
-      // Close button & backdrop click
-      $(document).on('click', '[data-modal-close], .modal-backdrop', function (e) {
+      // Close button
+      $(document).on('click', '[data-modal-close]', function (e) {
         e.preventDefault();
         close();
+      });
+
+      // Backdrop click (klik area gelap di luar .modal menutup; klik dalam modal tidak)
+      $(document).on('click', '.modal-overlay', function (e) {
+        if (e.target === e.currentTarget) close();
       });
 
       // ESC to close

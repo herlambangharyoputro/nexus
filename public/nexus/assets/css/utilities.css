@@ -87,7 +87,7 @@
 .ml-1 { margin-left: var(--s1) !important; }
 .ml-2 { margin-left: var(--s2) !important; }
 .ml-3 { margin-left: var(--s3) !important; }
-.ml-6 { margin-left: var(--s3) !important; }
+.ml-6 { margin-left: var(--s6) !important; }
 .mr-2 { margin-right: var(--s2) !important; }
 
 /* ── Padding ─────────────────────────────────────────────── */
